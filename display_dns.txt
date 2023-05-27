@@ -1,0 +1,19 @@
+@echo off
+ipconfig /displaydns > DNSCache.txt
+
+echo DNS resolver cache has been saved to DNSCache.txt.
+pause
+
+
+
+
+
+The ipconfig /displaydns command is executed, which displays the contents of the DNS resolver cache.
+
+The output of the command is redirected using the > symbol to a file named DNSCache.txt. The > symbol tells the Command Prompt to redirect the output to a file instead of displaying it on the screen.
+
+The echo command displays a message indicating that the DNS resolver cache has been saved to the file.
+
+The pause command is included to keep the Command Prompt window open after executing the script, allowing you to read the message before the window closes.
+
+After executing the script, a file named DNSCache.txt will be created in the same directory as the script. It will contain the contents of the DNS resolver cache. You can open the file using a text editor to view the saved information.

@@ -1,0 +1,19 @@
+@echo off
+tasklist /fi "status eq running" > RunningTasks.txt
+
+echo Running task list has been saved to RunningTasks.txt.
+pause
+
+
+
+In this script:
+
+The tasklist /fi command is executed with the filter option /fi "status eq running". This filters the task list to only include running processes.
+
+The output of the command is redirected using the > symbol to a file named RunningTasks.txt. The > symbol tells the Command Prompt to redirect the output to a file instead of displaying it on the screen.
+
+The echo command displays a message indicating that the running task list has been saved to the file.
+
+The pause command is included to keep the Command Prompt window open after executing the script, allowing you to read the message before the window closes.
+
+After executing the script, a file named RunningTasks.txt will be created in the same directory as the script. It will contain the contents of the running task list. You can open the file using a text editor to view the saved information.

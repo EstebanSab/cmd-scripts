@@ -1,0 +1,22 @@
+@echo off
+
+rem Save DNS resolver cache
+ipconfig /displaydns > DNSCache.txt
+echo DNS resolver cache has been saved to DNSCache.txt.
+
+rem Save task list
+tasklist > TaskList.txt
+echo Task list has been saved to TaskList.txt.
+
+rem Save running task list
+tasklist /fi "status eq running" > RunningTasks.txt
+echo Running task list has been saved to RunningTasks.txt.
+
+pause
+
+
+
+
+
+
+//the rem command is used to add comments.
